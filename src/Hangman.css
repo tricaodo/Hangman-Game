@@ -1,0 +1,19 @@
+.buttonWord {
+    width: 30%;
+    display:inline-block
+}
+
+.image{
+    margin-left: 113px;
+}
+
+.buttonWord button{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 8px 3px 3px 3px;
+    border-radius: 5px;
+    background-color: #dcdde1;
+    box-shadow: 0 6px #dcdde1;
+    font-family: inherit;
+}
