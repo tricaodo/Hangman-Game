@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Hangman.css';
+import {randomWord} from './words';
+
 import img1 from './01.png';
 import img2 from './02.png';
 import img3 from './03.png';
@@ -12,31 +14,51 @@ import img8 from './08.png';
 class Hangman extends Component {
     static defaultProps = {
         imgSrc: [img1, img2, img3, img4, img5, img6, img7, img8],
-        maxGuess: 8
+        maxGuess: 7
     }
     constructor(props) {
         super(props);
         this.state = {
             wrongGuess: 0,
-            word: 'apple',
+            word: randomWord(),
             guessed: new Set(),
-            isWon: 0
         }
         this.createButtons = this.createButtons.bind(this);
         this.handleClick = this.handleClick.bind(this);
+        this.resetGame = this.resetGame.bind(this);
     }
     render() {
+        const isWon = this.guessedWords().join("") === this.state.word;
+        const gameOver = this.state.wrongGuess >= this.props.maxGuess;
         return (
-            <div>
+            <div className="Hangman">
                 <div className="image">
                     <img src={this.props.imgSrc[this.state.wrongGuess]} />
                 </div>
-                <p>{this.guessedWords()}</p>
-                <div className="buttonWord">
-                    <p display={this.state.isWon === this.state.word.length ? "none" : "block"}>{this.createButtons()}</p>
+                <p className="word">
+                    {gameOver ? this.state.word : this.guessedWords()}
+                </p>
+
+                {gameOver && <p className="lose">You lose</p>}
+                {isWon
+                    ? <h2>You win</h2>
+                    : <div className="buttonWord">
+                        <p hidden={gameOver}>{this.createButtons()}</p>
+                    </div>
+                }
+                <div className="resetBtn">
+                    <button onClick={this.resetGame}>Reset Game?</button>
                 </div>
             </div>
         )
+    }
+
+    resetGame() {
+        this.setState({
+            wrongGuess: 0,
+            word: randomWord(),
+            guessed: new Set(),
+        })
     }
 
     guessedWords() {
@@ -60,8 +82,6 @@ class Hangman extends Component {
         const newState = this.state;
         if (!this.state.word.includes(word)) {
             newState.wrongGuess++;
-        } else {
-            newState.isWon++;
         }
         newState.guessed.add(word);
         this.setState(newState);

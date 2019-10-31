@@ -1,19 +1,44 @@
+
 .buttonWord {
     width: 30%;
-    display:inline-block
+    display:inline-block;
 }
 
 .image{
     margin-left: 113px;
 }
 
+.word{
+    margin: 0.4em -1em 0.2em 0;
+    font-size: 2rem;
+    letter-spacing: 1em;
+}
+.lose{
+    font-weight: bold;
+    color: red;
+}
+.resetBtn button{
+    width: 50px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px 3px 3px 3px;
+    border-radius: 5px;
+    background-color: #dcdde1;
+    box-shadow: 0 6px #c8d6e5;
+    font-family: inherit;
+}
+
 .buttonWord button{
     width: 30px;
     height: 30px;
     padding: 5px;
-    margin: 8px 3px 3px 3px;
+    margin: 5px 3px 3px 3px;
     border-radius: 5px;
     background-color: #dcdde1;
-    box-shadow: 0 6px #dcdde1;
+    box-shadow: 0 6px #c8d6e5;
     font-family: inherit;
+}
+
+h2{
+    color:#009432;
 }
