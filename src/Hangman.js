@@ -47,7 +47,7 @@ class Hangman extends Component {
                     </div>
                 }
                 <div className="resetBtn">
-                    <button onClick={this.resetGame}>Reset Game?</button>
+                    <button onClick={this.resetGame}>Reset Game</button>
                 </div>
             </div>
         )
