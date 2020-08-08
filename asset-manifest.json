@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Hangman-Game/static/css/main.7897dd53.chunk.css",
-    "main.js": "/Hangman-Game/static/js/main.9a1452e9.chunk.js",
-    "main.js.map": "/Hangman-Game/static/js/main.9a1452e9.chunk.js.map",
+    "main.css": "/Hangman-Game/static/css/main.fba39db3.chunk.css",
+    "main.js": "/Hangman-Game/static/js/main.420336eb.chunk.js",
+    "main.js.map": "/Hangman-Game/static/js/main.420336eb.chunk.js.map",
     "runtime-main.js": "/Hangman-Game/static/js/runtime-main.25023ecd.js",
     "runtime-main.js.map": "/Hangman-Game/static/js/runtime-main.25023ecd.js.map",
     "static/js/2.e872fd29.chunk.js": "/Hangman-Game/static/js/2.e872fd29.chunk.js",
     "static/js/2.e872fd29.chunk.js.map": "/Hangman-Game/static/js/2.e872fd29.chunk.js.map",
     "index.html": "/Hangman-Game/index.html",
-    "precache-manifest.9a63fb3cd319de9f0825b0a093419398.js": "/Hangman-Game/precache-manifest.9a63fb3cd319de9f0825b0a093419398.js",
+    "precache-manifest.b15a766f85f1821c067c6bb026346c68.js": "/Hangman-Game/precache-manifest.b15a766f85f1821c067c6bb026346c68.js",
     "service-worker.js": "/Hangman-Game/service-worker.js",
-    "static/css/main.7897dd53.chunk.css.map": "/Hangman-Game/static/css/main.7897dd53.chunk.css.map"
+    "static/css/main.fba39db3.chunk.css.map": "/Hangman-Game/static/css/main.fba39db3.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.25023ecd.js",
     "static/js/2.e872fd29.chunk.js",
-    "static/css/main.7897dd53.chunk.css",
-    "static/js/main.9a1452e9.chunk.js"
+    "static/css/main.fba39db3.chunk.css",
+    "static/js/main.420336eb.chunk.js"
   ]
 }
